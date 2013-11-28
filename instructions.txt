@@ -1,0 +1,19 @@
+Attached is a static non-functional page showing form elements representing a number of named windows of time and a graphical representation of those windows within the current month.
+Your task is make this non-functional page work.
+
+It is required that:
+A) On page load, the data must be loaded from a JSON string (the JSON for the sample windows is attached and also available in the document in the global variable jsonData) and the form elements and the windows generated
+B) The user must be able to adjust the data in the form and the graphical display will be adjusted to match
+C) The user must be able to move the windows (drag and drop) with the new dates being reflected in the input text fields
+C) The user must be able to resize the windows (drag and drop) with the new dates being reflected in the input text fields
+D) New windows should be able to be added by pressing the "Add Window" button
+E) Pressing the "Get Data" button should convert the current state of the data into JSON (in the same format) and displayed either using alert or the console
+	
+Implementation Guidelines
+-------------------------
+* The application will be tested by being placed on a web-server, it is not required that it work when loaded using the file-protocol
+* You may use any web frameworks that you wish, linking to publically accessible externally hosted libraries (e.g. Google Hosted Libraries) is acceptable
+* We shall be looking through source code to see how you have achieved the criteria. Therefore please do not minify your code, and leave it as you would normally format it for use in development environments
+* The application should work in multiple browsers; ideally the latest versions of Chrome, Firefox and Internet Explorer. If any browsers are excluded due to time contraints please include a note saying which browser does not work, why it does not work, and what further work would be required to make it work in that browser.
+
+If you require any clarification please contact James Hardy <james.hardy@saffrondigital.com>
