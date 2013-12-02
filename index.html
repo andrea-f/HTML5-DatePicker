@@ -3,23 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="windows.css">
-<script>var jsonData='[{"name":"First Window","from":"2013-11-05","to":"2013-11-21"},{"name":"Second","from":"2013-11-10","to":"2013-11-30"},{"name":"Another One","from":"2013-11-17","to":"2013-11-20"}]';</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="http://localhost/saffron/javascript/dateController.js"></script>
+<script src="http://localhost/saffron/javascript/dateLoad.js"></script>
+<script src="http://localhost/saffron/javascript/main.js"></script>
+<script src="http://localhost/saffron/javascript/dateView.js"></script>
+
+
+<script>
+    var jsonData1='[{"name":"First Window","from":"2013-11-05","to":"2013-11-21"},{"name":"Second","from":"2013-11-10","to":"2013-11-30"},{"name":"Another One","from":"2013-11-17","to":"2013-11-20"}]';
+</script>
 </head>
-<body>
-<section id="window-data">
-<div><label>Name:<input value="First Window"></label> <label>From:<input type="date" value="2013-11-05"></label> <label>To:<input type="date" value="2013-11-21"></label></div>
-<div><label>Name:<input value="Second"></label> <label>From:<input type="date" value="2013-11-10"></label> <label>To:<input type="date" value="2013-11-30"></label></div>
-<div><label>Name:<input value="Another One"></label> <label>From:<input type="date" value="2013-11-17"></label> <label>To:<input type="date" value="2013-11-20"></label></div>
-<button id="add-window">Add Window</button>
-</section>
-<section id="window-display">
-<div id="date-labels"><span class="block"><span class="rotate">2013-11-01</span></span><span class="block"><span class="rotate">2013-11-02</span></span><span class="block"><span class="rotate">2013-11-03</span></span><span class="block"><span class="rotate">2013-11-04</span></span><span class="block"><span class="rotate">2013-11-05</span></span><span class="block"><span class="rotate">2013-11-06</span></span><span class="block"><span class="rotate">2013-11-07</span></span><span class="block"><span class="rotate">2013-11-08</span></span><span class="block"><span class="rotate">2013-11-09</span></span><span class="block"><span class="rotate">2013-11-10</span></span><span class="block"><span class="rotate">2013-11-11</span></span><span class="block"><span class="rotate">2013-11-12</span></span><span class="block"><span class="rotate">2013-11-13</span></span><span class="block"><span class="rotate">2013-11-14</span></span><span class="block"><span class="rotate">2013-11-15</span></span><span class="block"><span class="rotate">2013-11-16</span></span><span class="block"><span class="rotate">2013-11-17</span></span><span class="block"><span class="rotate">2013-11-18</span></span><span class="block"><span class="rotate">2013-11-19</span></span><span class="block"><span class="rotate">2013-11-20</span></span><span class="block"><span class="rotate">2013-11-21</span></span><span class="block"><span class="rotate">2013-11-22</span></span><span class="block"><span class="rotate">2013-11-23</span></span><span class="block"><span class="rotate">2013-11-24</span></span><span class="block"><span class="rotate">2013-11-25</span></span><span class="block"><span class="rotate">2013-11-26</span></span><span class="block"><span class="rotate">2013-11-27</span></span><span class="block"><span class="rotate">2013-11-28</span></span><span class="block"><span class="rotate">2013-11-29</span></span><span class="block"><span class="rotate">2013-11-30</span></span></div> 
-<div id="windows">
-<div class="window-container"><span class="window" style="left:200px; width:640px">First Window</span></div>
-<div class="window-container"><span class="window" style="left:400px; width:800px">Second</span></div>
-<div class="window-container"><span class="window" style="left:680px; width:120px">Another One</span></div>
-</div>
-</section>
-<button id="get-data">Get Data</button>
+<body onload="main.onLoad();">
+
 </body>
 </html>
