@@ -60,5 +60,18 @@ body {
 	top:0;
 	left:0;
 	opacity:0.95;
-	width:80px;
+	width:80px;        
+}
+
+.ui-resizable-w {    
+    top: -19px;
+    left: 3px;    
+    width: 5% !important;    
+}
+
+.ui-resizable-e {    
+    top: -38px;
+    right: -7px;    
+    width: 5% !important;
+    float: right;    
 }
